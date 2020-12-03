@@ -1,0 +1,151 @@
+/* .chart-component{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.chart{
+    width: 50%;
+    height: 450px;
+    display: block;
+    background-color: #172041;
+    border-radius: 5%;
+    color:white;
+  }
+  .bars{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    background: #172041;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+    height: 80%;
+    border-radius: 5%;
+    z-index: 100px;
+  }
+  
+  .bars li{
+    display: table-cell;
+    height: 400px;
+    position: relative;
+  }
+  
+  .bars span{
+    width: 100%;
+    position: absolute;
+    bottom: -50px;
+    font-size: 1.4em;
+    text-align: center;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    transition: 0.5s;
+    transition-property: background-color;
+  }
+  
+  .bars li span:hover{
+      background-color: white;
+      color:  #172041;
+      border-radius: 15%;
+  }
+
+  .bars .bar{
+    display: block;
+    background: #428DFC;
+    width: 15px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    transition: 0.5s;
+    transition-property: background, box-shadow;
+  }
+
+  .bars .bar1{
+    display: block;
+    background:#0CE381;
+    width: 15px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 40px;
+    border-radius: 15%;
+    text-align: center;
+    transition: 0.5s;
+    transition-property: background, box-shadow;
+  }
+  .bars li span:hover{
+      cursor: pointer;
+  }
+  .bars li:hover .bar,.bars li:hover .bar1{
+    box-shadow: 0 0 10px 0 rgba(85, 239, 196, 0.5);
+  }
+  
+
+  .bars .bar1:hover{
+    background: #349277;
+    box-shadow: 0 0 10px 0 rgba(85, 239, 196, 0.5);
+    cursor: pointer;
+  }
+  .bars .bar:hover{
+    background: #55EFC4;
+    box-shadow: 0 0 10px 0 rgba(85, 239, 196, 0.5);
+    cursor: pointer;
+  }
+  
+
+  .overall{
+      z-index: 0;
+      position: absolute;
+      bottom: 0;
+      border-top: 2px solid white;
+      width: 650px;
+      margin-left: 1%;
+      color: white;
+  }
+
+  .budgettext{
+      font-weight: 50;
+    color: #fff;
+    position: absolute;
+    margin-left: 40%;
+    font-size: 1.5rem;
+}
+  .budgettext .budgetdata{
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .monthdata{
+    position: absolute;
+    margin-left: 5%;
+    color: white;
+  }
+  .spendings .legend{
+      background-color: #428DFC;
+      width: 10px;
+      height: 10px;
+      margin: 10px 10px 0 10px;
+      border-radius: 50%;
+  }
+  .spendings{
+      display: flex;
+  }
+  .income{
+      display: flex;
+  }
+  .income .legend{
+      background-color: #0CE381;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin: 10px 10px 0 20px;
+  }
+  .monthdata .data{
+      display: flex;
+  }
+  .textdata{
+      font-size: 1.5rem;
+      font-weight: 500;
+  }
+  .monthdata .data{
+      font-size: 1.2rem;
+  }
